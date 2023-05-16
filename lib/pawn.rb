@@ -1,12 +1,19 @@
+require 'colorize'
+
 class Pawn
   attr_reader :color, :look
 
-  def initialize(color, look = '♟︎')
+  def initialize(color)
     @color = color
-    @look = look
+    if @color == 'black'
+      @look = '♟︎'
+    elsif @color == 'white'
+      @look = '♙'
+    end
   end
 
-  def move
+  def move_once
+    
   end
 
   def capture

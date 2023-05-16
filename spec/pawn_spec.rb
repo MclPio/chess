@@ -11,4 +11,16 @@ describe Pawn do
       end
     end
   end
+
+  describe '#move_once' do
+    subject(:pawn) { described_class.new('white') }
+
+    context 'when pawn receives input () to move once' do
+      it 'changes position on board' do
+        
+      end
+    end
+  end
+
+
 end
